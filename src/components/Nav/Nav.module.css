@@ -4,10 +4,11 @@
   background-color: rgb(68, 65, 71);
 }
 
-.item {
+.item a {
   color: azure;
+  text-decoration: none;
 }
 
-.active {
+.item a.activeLink {
   color: gold;
 }
