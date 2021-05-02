@@ -3,8 +3,14 @@ import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
 const MyPosts = () => {
-    return (
 
+
+        let postData = [{ id:1, post:'Hi', likescount:15},
+                        { id:2, post:'Bienvenido en mi cait', likescount:60}
+        ]
+
+
+    return (
         <div className={s.posts}>
            <div className={s.myPosts}> <h3>My Posts</h3></div>
             <div className={s.newPost}>
@@ -13,8 +19,8 @@ const MyPosts = () => {
                     <button>New Post</button>
                 </div>
             </div>
-            <Post message='Hi' likecounter='70'/>
-            <Post message='Bienvenido en mi sait' likecounter='60'/>
+            <Post message={postData[0].post} likecounter={postData[0].likescount}/>
+            <Post message={postData[1].post} likecounter={postData[1].likescount}/>
             <Post/>
             <Post/>
             <Post/>
