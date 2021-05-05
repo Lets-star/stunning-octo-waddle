@@ -1,10 +1,11 @@
-
 let state = {
-    profilePage: {posts: [{id: 1, post: 'Hi', likescount: 15},
+    profilePage: {
+        posts: [{id: 1, post: 'Hi', likescount: 15},
             {id: 2, post: 'Bienvenido en mi cait', likescount: 60}
-        ], },
-    messagesPage :{
-        dialogs : [{
+        ],
+    },
+    messagesPage: {
+        dialogs: [{
             id: 1,
             name: 'Diana'
         }, {
@@ -23,7 +24,7 @@ let state = {
             id: 6,
             name: 'Alina'
         }],
-        messages : [{
+        messages: [{
             id: 1,
             message: 'Hi'
         }, {
@@ -35,6 +36,13 @@ let state = {
         }, {
             id: 4,
             message: 'Thx'
-        }] }
+        }]
+    },
+    sidebarPage: {
+        sidebar:
+               [{id: 1, friend: 'Anatoly'},
+                {id: 2, friend: 'Maxim'},
+                {id: 3, friend: 'Nastya'}]
+    }
 }
 export default state
