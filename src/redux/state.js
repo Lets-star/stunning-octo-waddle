@@ -40,9 +40,17 @@ let state = {
     },
     sidebarPage: {
         sidebar:
-               [{id: 1, friend: 'Anatoly'},
+            [{id: 1, friend: 'Anatoly'},
                 {id: 2, friend: 'Maxim'},
                 {id: 3, friend: 'Nastya'}]
     }
+}
+export let addPost = (postMessage) => {
+    let newPost = {
+        id: 5,
+        post: postMessage,
+        likescount: 0
+    }
+    state.profilePage.posts.push(newPost)
 }
 export default state

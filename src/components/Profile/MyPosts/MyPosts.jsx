@@ -8,12 +8,12 @@ const MyPosts = (props) => {
 
     const addPost = () => {
         let text = newPostElement.current.value;
-        alert(text)
+        props.addPost(text)
     };
 
-
-    let postsElements = props.posts
-        .map(p => <Post message={p.post} likecounter={p.likescount}/>)
+    let postsElements =
+        props.posts.map(p => <Post message={p.post} likecounter={p.likescount}/>);
+    debugger
     return (
         <div className={s.posts}>
             <div className={s.myPosts}><h3>My Posts</h3></div>
